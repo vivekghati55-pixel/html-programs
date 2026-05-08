@@ -1,0 +1,56 @@
+<!-- 
+form tag:- form tag is used to take inout from user and send data  server\backend. 
+
+action attribute:- inside this attribute we write file name where we want to submit / send from data
+
+method there are two types:-
+get:-its show data in url (not secure)
+     its fast compare then post
+     using get we can send less data in backend (2kb tantative)
+     use in search bar or not sensitive info
+     when we devolop web application
+
+post:-its hide data in url (secure)
+      its slower compare then get
+      using post we can send larg data in backend
+      when you create resiostration form, login form 
+
+
+redonly:-we read input data but we can not change text in input field and also data submit with form tag in backend 
+disabled :- we read data but we can not change data and also not submite data with form       
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Resistration page</h3>
+    <form action="1submit.html" method="get" target="self" autocomplete="of">
+        <table>
+            <tr><th>Name: </th> </td><td><input type="text" name="uname" placeholder="Enter user name" title="enter name" readonly><br></td></tr>
+            <tr><th>Father Name:</th> </td><td><input type="text" name="fname" placeholder="Enter user father name" title="enter name"><br></td></tr>
+            <tr><th>Password: </th> </td><td><input type="password" name="pass" placeholder="Enter user password" title="enter pass"><br></td></tr>
+            <!-- type="radio":-its make radio button inside form -->
+            <tr><th>Gender: </th> <td>Male<input type="radio" name="gen"> Female<input type="radio" name="gen"><br></td></tr>
+            <!-- type="checkbox":-its make chcek box in form -->
+            <tr><th>Hobbies: </th> <td>Male<input type="checkbox" name="hobbi" value="cricket"> Football<input type="checkbox" name="hobbi" type="Football"><br></td></tr>
+            <tr>
+                <th>select State: </th>
+                <!-- select tag:- is used to make dropdown lists -->
+                 <td>
+                    <select><option selected>MH</option>
+                 <option value="madhyapradesh">MP</option>
+                 <option>Gj</option>
+                 <option>RJ</option></select>
+                 </td>
+            <tr> <th></th> <td> <input type="submit" value="resister"> <input type="reset" value="clear"></td></tr>
+            <!-- <tr> <td></td> <td> <input onclick="alert('hellow user')" type="button" value="resister"></td></tr> -->
+        </table>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!-- 
+ css selectors :-  its use to select html element nside style tag 
+ 1. universal selector
+ 2. id selector
+ 3. element selector 
+ 4. class selectors 
+-->
+ <style>*{
+    /*universal selector */
+    /* color: darkolivegreen;
+    background-color: lightseagreen;
+    font-size: 30px; */
+
+    /*font-family: 'Times New Roman', Times, serif;*/
+    
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;*/
+
+    /* all h1 is a element selector*/
+    h1{
+        color: brown;
+        background-color: blueviolet;
+    }
+    p{
+        color: rgb(243, 244, 245);
+        background-color: rgb(215, 122, 17);
+    }
+    button{
+        background-color: coral;
+        color: black;
+        width: 100px;
+        height: 30px;
+    }
+    /*multi color selector using (,)  */
+    h1,p,h3{
+        background-color: blue;
+    }
+    .my-para{
+        text-decoration-line: line-through;
+    }
+
+ }
+ </style>
+ <body>
+    <h1> hey vivek </h1>
+    <h3> vivek ghati</h3>
+    <p class="my-para">Lorem ipsum dolor sit amet consectetur </p>
+    <p class="my-para">Lorem ipsum dolor sit amet consectetur </p>
+    <button>click me</button>
+ </body>
+
+ <!-- css selector:- its use to select 
+               priority chart in decending order...
+                          1. inine-css.    highest priority
+                                |
+                          2. di selector     2nd priority
+                                |
+                          3. class selector   3rd priority
+                                |
+                          4. element selector   4th priority
+                                |
+                          5. universal selector    last prioity
+                                  
+ -->

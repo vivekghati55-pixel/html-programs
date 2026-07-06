@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felx Navebar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            padding: 12px 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container li {
+            list-style: none;
+        }
+
+        .container li a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            padding: 5px;
+        }
+
+        .container li a:hover {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

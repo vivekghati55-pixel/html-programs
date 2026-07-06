@@ -1,0 +1,93 @@
+<!-- Flexbox :- Flexible Box Layout
+It is a one-dimensional layout method for arranging items in rows or columns.
+the flex model
+1.flex container :-
+Definition: The parent element that holds flex items.
+How to define: Use display: flex; or display: inline-flex; on the container
+
+2. Flex Item
+Definition: The direct children of a flex container.
+
+Automatically becomes flexible when placed inside a flex container.
+
+3. Main Axis
+Definition: The primary axis along which flex items are laid out.
+
+Depends on the flex-direction property:
+
+row (default): main axis is horizontal (left to right).
+
+column: main axis is vertical (top to bottom).
+Main axis affects:
+justify-content → controls alignment along the main axis.
+
+4. Cross Axis
+Definition: The axis perpendicular to the main axis.
+
+If main axis is horizontal (row), cross axis is vertical.
+
+If main axis is vertical (column), cross axis is horizontal.
+
+📌 Cross axis affects:
+align-items and align-self → control alignment along the cross axis.
+
+Flexbox Direction
+It sets how flex items are placed in the flex container, along which axis and direction.
+flex-direction : row; (default)
+flex-direction : row-reverse;
+flex-direction : column;
+flex-direction : column-reverse;  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div {
+            width: 80px;
+            height: 80px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #box1 {
+            background-color: red;
+        }
+
+        #box2 {
+            background-color: blue
+        }
+
+        #box3 {
+            background-color: orange
+        }
+
+        #box4 {
+            background-color: yellow
+        }
+
+        #box5 {
+            background-color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div>
+</body>
+
+</html>

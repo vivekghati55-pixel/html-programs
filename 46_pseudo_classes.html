@@ -1,0 +1,147 @@
+<!-- What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->
+<!-- hover pseudo class code is work when we over mouse on link -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .btn {
+            background-color: blueviolet;
+            width: 120px;
+            height: 40px;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+
+        /* its work when we mouse over an html element  */
+        .btn:hover {
+            background-color: blue;
+        }
+
+        input {
+            height: 40px;
+            width: 200px;
+
+        }
+
+        /* when we focuse on input field */
+
+        input:focus {
+            /* background-color: gainsboro; */
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        input:hover {
+            background-color: gray;
+        }
+
+        /* when a btn is clicked so that time we can style btn using active pseudo class */
+        .btn:active {
+            background-color: red;
+            border-radius: 20px;
+            border: none;
+        }
+
+        a:active {
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            background-color: burlywood;
+        }
+
+        /* set color when link is not visited */
+        a:link {
+            color: green;
+        }
+
+        /* set color after link visited */
+        a:visited {
+            color: red;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        p:first-child {
+            background-color: red;
+        }
+
+        p:last-child {
+            background-color: blue;
+        }
+
+        p:nth-child(4) {
+            background-color: purple;
+        }
+
+        p:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        p:nth-child(even) {
+            background-color: magenta
+        }
+
+        /* if any parnet element have single paragraph */
+        P:only-child {
+            background-color: black;
+            color: wheat;
+        }
+
+        /* its work html element which have disabled attribute */
+        input:disabled {
+
+            background-color: gray;
+        }
+
+        input:required {
+            border: 2px solid red;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <button class="btn">click!</button>
+    <input type="text">
+    <input type="text" value="chetan" disabled>
+    <input type="text" required>
+    <input type="text" disabled>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://www.amazon.com/">amazone</a>
+    <a href="images/fox.jpg">open pic</a>
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <p>this is paragraph 4</p>
+        <p>this is paragraph 5</p>
+        <p>this is paragraph 6</p>
+    </div>
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <p>this is paragraph 4</p>
+        <p>this is paragraph 5</p>
+        <p>this is paragraph 6</p>
+    </div>
+    <div>
+        <p>hello studenst</p>
+    </div>
+</body>
+
+</html>

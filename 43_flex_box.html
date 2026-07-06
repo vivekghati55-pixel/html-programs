@@ -1,0 +1,78 @@
+<!-- 
+Flex Properties
+
+ for Flex Container
+
+ justify-content : alignment along the main axis. 
+ flex-start / flex-end / centre / space-evenly / space-around / space-between
+
+ flex-wrap : nowrap / wrap / wrap-reverse
+
+ align-items : alignment along the cross axis.
+
+ align-content : alignment of space between & around the content along cross-axis 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap-reverse;
+            align-content:space-around;
+        }
+
+        div {
+            width: 300px;
+            height: 80px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #box1 {
+            background-color: red;
+        }
+
+        #box2 {
+            background-color: blue
+        }
+
+        #box3 {
+            background-color: orange
+        }
+
+        #box4 {
+            background-color: yellow
+        }
+
+        #box5 {
+            background-color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div>
+    </div>
+</body>
+
+</html>

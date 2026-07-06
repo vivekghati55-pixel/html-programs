@@ -1,0 +1,98 @@
+<!-- 
+ JavaScript is the world's most popular programming language.
+
+JavaScript is the programming language of the Web application .
+
+JavaScript is easy to learn.
+
+java script is used to validation in forms.
+
+java script is used to create dynamic page of html.
+
+java script is used to alter(change) image of same page using click on button.
+
+java script is used to alter(change) content of same page using click on button.
+
+JavaScript was invented by Brendan Eich in 1995.
+
+It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+In 1996, Netscape and Brendan Eich took JavaScript to the ECMA international
+standards organization, and a technical committee (TC39) was created to develop 
+the language.
+
+1997	ES1	ECMAScript 1 was released
+1998	ES2
+1999    ES3
+2018	ES6	Full support for ES6 in all browsers ** 
+
+European Computer Manufacturers Association :- the organization behind the standardization
+of many technologies, including ECMAScript, the language specification for JavaScript.
+
+JavaScript is an interpreted language.
+
+Code is executed line-by-line by an engine (like Chrome's V8) without needing prior compilation into machine code.
+
+This allows for quick testing and dynamic behavior.
+
+java script is dynamic language.
+
+java script can write in html page inside head tag , inside body tag
+
+inside body tag at the bottum java script is good for run fast html content display.
+java script in html page two types
+internal js
+external js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .box {
+            margin: auto;
+            height: 250px;
+            width: 150px;
+            border: 1PX solid black;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .box button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="images/nature1.jpg">
+        <button>change image</button>
+    </div>
+
+    <script>
+
+        let arr = ["images/cat.jpg", "images/deer.jpg", "images/fox.jpg", "images/nature1.jpg", "images/nature2.jpg"]
+        let btn = document.querySelector("button");
+        let img = document.querySelector("img");
+        console.log(btn);
+        let i = 0;
+        btn.addEventListener("click", () => {
+            img.src = arr[i];
+            i++;
+            if (i > 4) {
+                i = 0;
+            }
+        })
+    </script>
+</body>
+
+</html>

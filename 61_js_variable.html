@@ -1,0 +1,78 @@
+<!-- 
+Variables are Containers for Storing Data
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const
+
+Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015 (ES6).
+
+The var keyword should only be used in code written for older browsers.
+
+When to Use var, let, or const?
+
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Only use let if you can't use const
+
+4. Only use var if you MUST support old browsers.
+
+let, const & var
+ var : Variable can be re-declared & updated. A global scope variable. 
+ let : Variable cannot be re-declared but can be updated. A block scope variable. 
+ const : Variable cannot be re-declared or updated. A block scope variable.
+
+Block Scope
+Before ES6 (2015), JavaScript did not have Block Scope.
+
+JavaScript had Global Scope and Function Scope.
+
+ES6 introduced the two new JavaScript keywords: let and const.
+
+These two keywords provided Block Scope in JavaScript:
+
+Variable Rules
+ Variable names are case sensitive; “a” & “A” is different.
+ Only letters, digits, underscore( _ ) and $ is allowed. (not even space)
+ Only a letter, underscore( _ ) or $ should be 1st character.
+ Reserved words cannot be variable names.
+
+ Common Naming Conventions in JavaScript:-
+ camelCase :- userName, totalPrice (variable name ,function name , object)
+ snake_case :- max_marks, MAX_MARKS (constants)
+ PascalCase :- UserName , TotalPrice (classes name)
+-->
+
+<script>
+    // var , let , const 
+
+    var _$he123_llo = 45;
+
+    {
+        var name1 = "chetan";
+        var name1 = "raj";   // we redecalaire
+    }
+    console.log(name1);
+    let age = 100;
+    {
+        let age = 12;
+        console.log(age);
+        console.log(name1);
+    }
+    {
+        const pi = 3.141;
+        let age = 45;
+        console.log(age);
+        console.log(pi);
+    }
+    console.log(age);
+    // console.log(pi); its show error
+
+</script>

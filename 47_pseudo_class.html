@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* when we checked radio button and checkbox  */
+        input:checked {
+            height: 30px;
+            width: 30px;
+        }
+
+        div {
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+        }
+
+        /*  its work on empty element  */
+        div:empty {
+            /* background-color: red; */
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox">
+    <input type="radio">
+    <div>
+        <p>hello</p>
+    </div>
+    <div>
+        <p>by</p>
+    </div>
+    <div></div>
+</body>
+
+</html>

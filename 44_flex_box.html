@@ -1,0 +1,96 @@
+<!-- 
+    align-self :-   its used to align sigle flex item.
+
+    gap:-  its provide gap rwo and colum both
+    row-gap:- its provide gap only row
+    column-gap :- its provide gap only colum.
+    
+    order:- order word for self item its decide order of item
+
+    flex-grow :-  its grow flex item acording to remaining space
+   
+    flex-shrink :-  its use to shrink when flex item have more space then flex contaner.
+    
+    flex-basis :- 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* gap:30px; */
+            /* row-gap: 20px; */
+            /* column-gap: 50px; */
+            /* flex-wrap: wrap; */
+            /* align-content:center; */
+        }
+
+        div {
+            width: 500px;
+            height: 80px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #box1 {
+            background-color: red;
+            /* align-self: flex-start; */
+             /* order:5; */
+             /* flex-grow: 3; */
+             /* flex-shrink: 2; */
+             flex-basis: 50%;
+        }
+
+        #box2 {
+            background-color: blue;
+            /* order: 2; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+              flex-basis: 30%;
+        }
+
+        #box3 {
+            background-color: orange;
+            /* order: 1; */
+        }
+
+        #box4 {
+             /* order:3; */
+            background-color: yellow;
+        }
+
+        #box5 {
+            background-color: green;
+            /* align-self: flex-end; */
+             /* order: 4; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">box1</div>
+        <div id="box2">box2</div>
+        <!-- <div id="box3">box3</div>
+        <div id="box4">box4</div>
+        <div id="box5">box5</div> -->
+    </div>
+</body>
+
+</html>

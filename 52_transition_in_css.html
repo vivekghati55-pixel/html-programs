@@ -1,0 +1,62 @@
+<!-- 
+ Transitions
+ Transitions enable you to define the transition between two states of an element. 
+ transition-property : property you want to transition (font-size, width etc.)
+ transition-duration : 2s / 4ms ..
+
+ transition-timing-function : ease-in / ease-out / linear / steps(2)
+
+ transition-delay : 2s / 4ms .
+
+ Transition Shorthand
+ property name | duration | timing-function | delay
+ transition: font-size 2s ease-in-out 0.2s;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* transition on sigle property */
+            /* transition-property: background-color ; */
+            /* transition on multiple properties */
+            /* transition-property: background-color , width; */
+            /* transition on all properties */
+            /* transition-property: all;
+            transition-duration: 2s; */
+            /* tranistion start aftre 5 s */
+            /* transition-delay: 0.01s; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: steps(15); */
+
+            /* transition: all 2s linear 2s; */
+            transition: all 2s;
+        }
+
+        div:hover {
+            margin-left: 500px;
+            /* margin-left: 100px;  */
+            /* width: 500px; */
+            /* height: 500px; */
+            /* background-color: yellow; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

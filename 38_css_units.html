@@ -1,0 +1,96 @@
+<!-- Units in css 
+there are two types unit in css
+absolute Units :-  its fixed width and height units means its not customize
+according to screen size and parent element size.
+px :- pixle
+cm :- centi meter
+mm :- milli meter 10mm = 1 cm
+in : inch  1 inch= 2.54 cm
+
+Relative Units:-  relative units size depends on  other elements like parent, screen etc.
+
+%  :- parent to child effect
+em :- font size of parent , in the case of  "font-size"
+em :- font size of itself , in the other propertice like "width" 
+rem :- (root em ) font size of root element  
+
+Other :- use some times
+vh:- relative to 1% view port height
+vw :-  relative to 1% view port width   
+-->
+<!DOCTYPE html>
+
+
+<head>
+    <style>
+        #parent {
+            /* background-color: red; */
+            border: 2px solid red;
+            height: 220px;
+            /* width: 1in; */
+            /* width: 50%; */
+            width: 220px;
+            font-size: 40px;
+
+        }
+
+        #child {
+            /* background-color: blue; */
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 50%;
+            /* font-size: 50px;   */
+            /* width: 3em; */
+            /* margin-left: 2em; */
+            font-size: 2rem;
+            width: 2em;
+        }
+
+        html {
+            font-size: 50px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #box {
+            background-color: red;
+            height: 50vh;
+            width: 50vh;
+        }
+
+        #my-box{
+            background-color: red;
+            width: 50%;
+            height: 50vh;
+        }
+        body{
+            /* margin: 0; */
+            height: 50vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="parent">
+
+        <div id="child">
+           hello
+        </div>
+    </div> -->
+
+    <!-- <div id="parent">
+        <img src="images/fox.jpg">
+    </div> -->
+
+    <!-- <div id="box">
+
+    </div> -->
+
+     <div id="my-box">
+
+     </div>
+
+</body>

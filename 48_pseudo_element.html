@@ -1,0 +1,96 @@
+<!-- A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* its style only frist later of paragraph */
+        p::first-letter {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* its style only first line of paragraph */
+        p::first-line {
+            background-color: blue;
+            color: white;
+        }
+
+        input {
+            color: red;
+        }
+
+        /* its style only placeholder content of input field  */
+        input::placeholder {
+            color: blue;
+            font-weight: bolder;
+        }
+
+        /* its style  only when we select paragraph on web page */
+        #para::selection {
+            background-color: red;
+            color: burlywood;
+        }
+
+        li {
+            color: red;
+        }
+
+        /* its style list markers means number or bulets */
+        li::marker {
+            color: blue;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>orange</li>
+    </ul>
+    <input type="text" placeholder="enter you name">
+    <p>helle this is para 1 </p>
+    <p>helle this is para 1 </p>
+    <p>helle this is para 1 </p>
+    <p>helle this is para 1 </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum corporis numquam placeat amet. Aperiam
+        modi sed a. Tempore sint, unde, cumque natus culpa illum nihil voluptas, magni enim non a consequuntur suscipit
+        ipsum odit labore recusandae repudiandae iure corrupti! Suscipit quae nemo eligendi, possimus, quidem, minima
+        enim voluptas soluta totam iure recusandae tempora quasi sunt repudiandae praesentium. Suscipit voluptatem enim,
+        dolor ut debitis rerum. Aliquid est obcaecati doloremque blanditiis consectetur quidem, fuga omnis. Provident
+        dolorem ullam adipisci ad iste, pariatur omnis molestias nostrum ducimus illo reiciendis iure! Asperiores
+        explicabo voluptatibus tempora quasi impedit quo, eligendi nesciunt aspernatur quidem incidunt neque deleniti?
+        Aut doloribus ab, reprehenderit animi et ullam iusto facere molestias distinctio voluptatum accusantium non
+        libero reiciendis quibusdam hic rerum deserunt beatae error amet magnam obcaecati labore? Quia, nihil nostrum.
+        Quae, repellat sequi, unde natus minus nihil maiores rerum voluptas est distinctio voluptatum fugiat eos aliquam
+        perspiciatis, magnam laboriosam tempore delectus voluptates saepe debitis ipsam. Mollitia repellat ipsam ex
+        perferendis accusamus nam modi aperiam eaque voluptas quos ab animi illo sint temporibus totam quae, molestiae
+        unde. Et debitis nesciunt ea sapiente. Alias fugiat maxime libero minima quisquam eligendi incidunt dolore
+        beatae tenetur mollitia. Illum laboriosam eveniet ipsa amet numquam!</p>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum corporis numquam placeat
+        amet. Aperiam
+        modi sed a. Tempore sint, unde, cumque natus culpa illum nihil voluptas, magni enim non a consequuntur suscipit
+        ipsum odit labore recusandae repudiandae iure corrupti! Suscipit quae nemo eligendi, possimus, quidem, minima
+        enim voluptas soluta totam iure recusandae tempora quasi sunt repudiandae praesentium. Suscipit voluptatem enim,
+        dolor ut debitis rerum. Aliquid est obcaecati doloremque blanditiis consectetur quidem, fuga omnis. Provident
+        dolorem ullam adipisci ad iste, pariatur omnis molestias nostrum ducimus illo reiciendis iure! Asperiores
+        explicabo voluptatibus tempora quasi impedit quo, eligendi nesciunt aspernatur quidem incidunt neque deleniti?
+        Aut doloribus ab, reprehenderit animi et ullam iusto facere molestias distinctio voluptatum accusantium non
+        libero reiciendis quibusdam hic rerum deserunt beatae error amet magnam obcaecati labore? Quia, nihil nostrum.
+        Quae, repellat sequi, unde natus minus nihil maiores rerum voluptas est distinctio voluptatum fugiat eos aliquam
+        perspiciatis, magnam laboriosam tempore delectus voluptates saepe debitis ipsam. Mollitia repellat ipsam ex
+        perferendis accusamus nam modi aperiam eaque voluptas quos ab animi illo sint temporibus totam quae, molestiae
+        unde. Et debitis nesciunt ea sapiente. Alias fugiat maxime libero minima quisquam eligendi incidunt dolore
+        beatae tenetur mollitia. Illum laboriosam eveniet ipsa amet numquam!</p>
+
+</body>
+
+</html>

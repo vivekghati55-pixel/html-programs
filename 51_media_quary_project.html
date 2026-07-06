@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Using Media Query</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav {
+
+            background-color: black;
+            padding: 10px;
+        }
+
+        a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            margin-left: 50px;
+        }
+
+
+        @media (max-width:500px) {
+
+            a {
+                display: block;
+                text-align: center;
+            }
+
+            nav {
+                background-color: rgb(150, 66, 6);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+    </nav>
+</body>
+
+</html>

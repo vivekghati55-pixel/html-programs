@@ -1,0 +1,127 @@
+<!--
+ Animation
+ To animate CSS element 
+
+ The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from
+ one set of CSS styles to another.
+
+During the animation, you can change the set of CSS styles many times.
+
+Specify when the style change will happen in percent, or with the keywords 
+"from" and "to", which is the same as 0% and 100%. 0% is the beginning of 
+
+@keyframes animationname {keyframes-selector {css-styles;}}
+
+the animation, 100% is when the animation is complete.
+ @keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+ }
+ Animation Properties
+ animation-name
+ animation-duration
+ animation-timing-function 
+ animation-delay
+ animation-iteration-count
+ animation-direction
+
+ Animation Shorthand
+ animation : animation_name duration count delay timing-function diraction
+
+ % in Animation
+ @keyframe myName {
+ 0% { font-size : 20px; }
+ 50% { font-size : 30px; }
+ 100% { font-size : 40px; }
+ 
+ Create a simple loader using CSS
+ Step1 : create a div with circular shape & a thick border from one end
+ (top/bottom/left/right)
+ Step2 : To make it spin create an animation which transforms it from 0deg to 360deg
+ Step3 : Add the animation property to the loader with infinite duration
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            /* animation-name: move-animation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 10s;
+            animation-direction: alternate;
+            animation-timing-function: linear; */
+            /* animation: move-animation 2s infinite 0s linear alternate; */
+            animation: color-animate 0.1s infinite linear alternate;
+        }
+
+        /* @keyframes move-animation {
+            from {
+                margin-left: 0px;
+                background-color: red;
+            }
+
+            to {
+                margin-left: 600px;
+                background-color: blue;
+            }
+        } */
+
+        @keyframes move-animation {
+            from {
+                transform: translateX(0px);
+                background-color: red;
+                /* height: 100px;
+                border-radius: 0%; */
+            }
+
+            to {
+                transform: translateX(600px);
+                background-color: blue;
+                /* height: 200px; */
+                /* border-radius: 50%; */
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                margin-left: 0px;
+                transform: rotate(0deg);
+            }
+
+            to {
+                margin-left: 600px;
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes color-animate {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

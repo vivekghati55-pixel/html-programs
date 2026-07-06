@@ -1,0 +1,31 @@
+<!-- display inside html elements -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: red;
+            height: 50px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="res"> </h1>
+
+    <script>
+        // wap to add  two numbers
+        a = 12
+        b = 50
+        c = a + b
+        console.log("addition = ", c)
+        document.getElementById("res").innerText = "addition = " + c
+    </script>
+</body>
+
+</html>

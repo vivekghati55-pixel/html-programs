@@ -1,0 +1,38 @@
+<!-- <script>
+    let i = 1;
+    while (i <= 5) {
+        console.log("hello js ", i);
+        i++; //4
+    }
+</script> -->
+
+<!-- <script>
+    let i = 1;
+    while (i <= 10) {
+        console.log(i);
+        i++; //4
+    }
+</script> -->
+
+<!-- <script>
+    let i = 1;
+    let res = ""
+    while (i <= 10) {
+        if (i % 2 == 0) {
+            res = res + i + " "
+        }
+        i++;
+    }
+    console.log(res)
+</script> -->
+
+<script>
+    let n = 453;
+    let res = ""
+    while (n != 0) {
+        rem = n % 10; //3
+        res = res + rem; // 3
+        n = parseInt(n / 10)
+    }
+    console.log(res)
+</script>

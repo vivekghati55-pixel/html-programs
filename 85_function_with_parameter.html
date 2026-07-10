@@ -1,0 +1,41 @@
+<!-- function with parameter -->
+<script>
+    function addition(a, b)     // here a and b are parameter
+    {
+        let c;
+        c = a + b;
+        console.log("addition = ", c)
+    }
+
+    function subtraction(a, b) {
+        let c = a - b;
+        console.log("subtraction : ", c)
+    }
+    function cube(num) {
+        let res;
+        res = num * num * num;
+        console.log(`cube of ${num} = ${res}`)
+
+    }
+
+    function table(num) {
+        console.log(`table of ${num} : `)
+        for (let i = 1; i <= 10; i++) {
+            console.log(`${num} x ${i} = ${num * i}`)
+        }
+        console.log("--------------")
+    }
+
+    table(5);
+    table(6)
+    cube(7);
+    cube(2);
+    cube(4)
+    // addition(12, 8);
+    // addition(10, 50);
+    // addition(5, 9);
+
+    // subtraction(12, 4)
+
+
+</script>

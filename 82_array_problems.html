@@ -1,0 +1,130 @@
+<!-- <script>
+    // Write a program to find the sum of all elements in an array.
+    let arr = [12, 34, 56, 78, 90]
+    let sum = 0;
+    for (let ele of arr) {
+        sum = sum + ele;
+    }
+    console.log(`sum of array element is ${sum}`)
+</script> -->
+<!-- <script>
+    //  Write a program to find sum of array elements & check sum is even or odd.
+    let arr = [12, 34, 56, 78, 90]
+    let sum = 0;
+    for (let ele of arr) {
+        sum = sum + ele;
+    }
+    console.log(`sum of array element is ${sum}`)
+    console.log(`average of array element is ${sum / arr.length}`)
+    console.log(sum % 2 == 0 ? "sum is even" : "sum is odd");
+</script> -->
+
+<!-- <script>
+    // Write a program to display all even numbers present in an array.
+    let arr = [12, 3, -56, -7, 90];
+    console.log("even elements : ")
+    let res = ""
+    for (let num of arr) {
+        if (num % 3 == 0) {
+            res = res + num + " "
+        }
+    }
+    console.log(res)
+</script> -->
+
+<!-- <script>
+    let arr = [];
+    let n = Number(prompt("enter array length : "))
+    for (let i = 0; i < n; i++)//1
+    {
+        arr[i] = Number(prompt(`enter array element ${i + 1}: `))
+    }
+
+    console.log("array elements are : ")
+    for (let num of arr) {
+        console.log(num);
+    }
+</script> -->
+
+<!-- <script>
+    // Write a program to count how many even numbers are present in an array.
+    let arr = [3, 4, 6, 2, 7, 8]
+    let count = 0;
+    for (let num of arr) {
+        if (num % 2 == 0) {
+            count++;
+        }
+    }
+    console.log(`total even count = ${count}`)
+</script> -->
+
+<!-- <script>
+    //  Write a program to print squares of all numbers present in a given array.
+    let arr = [3, 4, 6, 2, 7, 8]
+    for (let num of arr) {
+        console.log(`square of ${num} = ${num * num}`)
+    }
+</script> -->
+<!-- <script>
+    // Write a program to display the array elements in reverse order.
+    // let arr = [3, 4, 6, 2, 7, 8]
+    // let res = ""
+    // for (let num of arr) {
+    //     res = num +" "+res 
+    // }
+    // console.log(res)
+
+    let arr = [3, 4, 6, 2, 7, 8]
+    console.log("array element in reverse order : ")
+    for (let num = arr.length - 1; num >= 0; num--) {
+        console.log(arr[num]);
+    }
+
+</script> -->
+
+<!-- <script>
+    //here not make array copy just copy referen
+    //and both arr  and newarr point same array memory.
+    let arr = [12, 34, 56, 78, 90];
+    let newarr = arr;
+
+    arr[1] = 600;
+
+    console.log(arr)
+    console.log(newarr)
+</script> -->
+<!-- <script>
+
+    let arr = [12, 34, 56, 78, 90];
+    let newarr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        newarr[i] = arr[i]
+    }
+
+    console.log(arr)
+    console.log(newarr)
+    arr[0] = 900;
+    console.log(arr)
+    console.log(newarr)
+</script> -->
+
+<!-- <script>
+    // use spread operator to make copy one array
+    let arr = [12, 34, 56, 78, 90];
+    let newarr = [...arr];
+
+    newarr[2] = 400;
+
+    console.log(arr)
+    console.log(newarr)
+</script> -->
+
+<script>
+    //destructer of array
+    let arr = [12, 34, 56]
+    let [a, b, c] = arr
+    console.log(a)
+    console.log(b)
+    console.log(c)
+</script>

@@ -1,0 +1,99 @@
+<!-- 
+ What is DOM
+ DOM stands for Document Object Model.
+ The DOM represents the page so that programming languages
+(like JavaScript) can change the document structure, style, and content dynamically.
+     Language	           Role in DOM
+      HTML	             Builds the structure of the DOM
+      CSS	             Styles elements in the DOM
+      JavaScript	     Dynamically manipulates the DOM content
+-->
+<!-- 
+Window object :- 
+The window object represents an open window in a browser. It is browser’s object (not JavaScript’s)
+& is automatically created by browser.
+It is a global object with lots of properties & methods.
+window.alert()
+window.console.log() 
+
+console.log(window) ;// print window object in detail with propertice or method
+
+
+document object is a part of window 
+window --- document object
+
+we can access all html element in javascript because html code convert in document object and document 
+object is available inisde javascript
+
+What is DOM?
+
+When a web page is loaded, the browser creates a Document Object Model (DOM) of the page.
+
+window ---document
+document---- html
+html--- head
+html ---body
+head--- meta , title, link
+body --- div , script
+div --- image ,h1, p , button
+
+above all keyword is consider as a object and make a tree so in tree all node are object so we can say
+that that tree which make by object is  Document object model.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: white;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM introduction by hello world institute</h1>
+    <h3>1. dom full form </h3>
+    <p>dom stands for document object modle</p>
+    <button>click me !</button>
+    <script>
+        // console.log("hello js")
+        // // window.alert("hello DOM")
+        // console.log(window.document) // its show content of page
+        // console.dir(window.document) // its show propertice and methods
+
+        // console.log(document) // its show content of page
+        // console.dir(document) // its show propertice and methods
+
+
+        // console.log(document.body) // its show only body content
+        // console.dir(document.body) // its show propertice and method
+
+
+        // console.log(document.body.children[0])
+        // console.dir(document.body.children[0])
+
+
+        // console.log(document.body.children[0].innerText)
+
+        document.body.children[0].innerText = "this change by Dom"
+        document.body.children[1].style.color = "red";
+
+    </script>
+
+</body>
+
+</html>

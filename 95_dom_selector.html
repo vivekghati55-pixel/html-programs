@@ -1,0 +1,144 @@
+<!-- 
+ DOM Selector :- how to access html element in javascript
+
+ Selecting with id
+ document.getElementById(“myId”) 
+
+ Selecting with class
+ document.getElementsByClassName(“myClass”)
+
+ Selecting with tag
+ document.getElementsByTagName(“p”)
+
+
+ DOM Selector :-
+
+ Query Selector :- its best from above selctor because its work for all.
+ document.querySelector(“#myId / .myClass / tag”)
+ //returns first element
+
+ document.querySelectorAll(“#myId / .myClass / tag”)
+ //returns a NodeList
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM selectors </title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #btn {
+            width: 120px;
+        }
+
+        #sub-heading {
+            color: red;
+            background-color: orange;
+        }
+
+        .heading {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">code with vivek</h1>
+    <h3 id="sub-heading" class="heading">course details :- </h3>
+    <ol>
+        <li>C/C++</li>
+        <li id="py">python</li>
+        <li id="p">java</li>
+    </ol>
+    <p class="para">contact for more details 9763393805</p>
+    <p class="para">visit code with vivek for change your life </p>
+    <button id="btn" title="hi i am button ">more details</button>
+
+    <script>
+
+        //  Selecting with id
+        //  document.getElementById(“myId”)
+
+        // let mybtn = document.getElementById("btn");
+        // console.log(mybtn)
+
+        // let myHeading = document.getElementById("sub-heading");
+        // console.log(myHeading)
+        // // myHeading.innerText = "my courses :- "
+
+        // let myli = document.getElementById("py");
+        // console.log(myli)
+
+
+
+        //  Selecting with class
+        //  document.getElementsByClassName(“myClass”)
+        // document.getElementByClassName() :- its return  HTMLCollection .
+
+
+        // let myHeading = document.getElementsByClassName("heading");
+        // console.log(myHeading[0])
+        // console.log(myHeading[1])
+
+        // let mypara = document.getElementsByClassName("para");
+        // console.log(mypara[0])
+
+        //Selecting with tag
+        //document.getElementsByTagName(“p”)
+
+
+        // let p = document.getElementsByTagName("p");
+        // console.log(p[0])
+        // console.log(p[1])
+
+        //  DOM Selector :-
+
+        //  Query Selector :- its best from above selctor because its work for all.
+        //  document.querySelector(“#myId / .myClass / tag”)
+        //  //returns first element
+
+        //  document.querySelectorAll(“#myId / .myClass / tag”)
+        //  //returns a NodeList
+
+
+        // let ele = document.querySelector("p");
+        // console.log(ele);
+
+
+        // let ele = document.querySelectorAll("p");
+        // console.log(ele[0]);
+        // console.log(ele[1]);
+
+        // let ele = document.querySelector(".heading");
+        // console.log(ele);
+
+
+        // let ele = document.querySelectorAll(".heading");
+        // // for (let e of ele) {
+        // //     console.log(e)
+        // // }
+
+        // ele.forEach((e) => console.log(e))
+
+        // let ele = document.querySelector("#btn");
+        // console.log(ele)
+
+        let ele = document.querySelector("#p");
+        console.log(ele)
+
+
+
+        let h1 = document.body.children[0];
+        console.log(h1)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!-- 
+  map methods for array similer to forEach .
+
+  map :- creates a new array with the results of some operation. the value 
+  its callback returns are used to form new array.
+
+
+
+  filter method of array :- 
+  creates new array of element that given true for a condition/filter. 
+
+
+  Reduce method for array :-
+  Perform some operation  and reduces  array into the single value  . it returns the single value .
+-->
+
+<script>
+    //wraite a program which make  a new array which containe squre of previus array.
+    let arr = [3, 6, 5, 7, 8, 2];
+
+    // let square = []
+    // arr.forEach((num) => {
+    //     square.push(num * num);
+    // })
+
+
+    //make new array with square from previus array using map method
+    let square = arr.map((num) => num * num)
+
+    //make new array with cube from previus array using map method
+    let cube = arr.map((num) => {
+        return num * num * num;
+    })
+
+
+    //wap to add 5 more marks for each element and make new array.
+    let marks = [20, 40, 60, 45, 90];
+
+    let newMarks = marks.map((mark) => mark + 5)
+
+    // console.log(arr);
+    // console.log(square);
+    // console.log(cube);
+    // console.log(marks);
+    // console.log(newMarks);
+
+
+
+    //   filter method of array :-
+    //   creates new array of element that given true for a condition/filter.
+
+
+    //wap to make new array which containe only even numbers.
+    arr = [1, 12, 3, 4, 5, 6, 7, 18, 9];
+    let even = arr.filter((num) => num % 2 == 0)
+
+
+    let above_5 = arr.filter((num) => num > 5)
+
+    let multi_6 = arr.filter((num) => num % 6 == 0)
+
+    let arr2 = arr.filter((num) => num >= 10 && num <= 20)
+
+    console.log(arr);
+    console.log(even);
+    console.log(above_5)
+    console.log(multi_6)
+    console.log(arr2)
+
+
+
+    //   Reduce method for array :-
+    //   Perform some operation  and reduces  array into the single value  . it returns the single value .
+
+    arr = [3, 6, 4, 7, 8];
+
+    //wap to displau sum of all array element using reduce method.
+    let sum = arr.reduce((res, num) => res + num)
+    console.log(sum)
+
+
+    let squreSum = arr.reduce((sum, num) => sum + num * num)
+    console.log(squreSum)
+
+
+    //wap to print max number of array.
+    arr = [3, 116, 14, 77, 8];
+
+    let max = arr.reduce((res, num) => res < num ? num : res)
+
+    console.log(max)
+
+
+    arr = [1, 2, 3, 4, 5, 6];
+
+    let evensum = arr.filter((num) => num % 2 == 0).reduce((res, num) => res + num);
+    console.log(evensum);
+
+</script>

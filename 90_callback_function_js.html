@@ -1,0 +1,45 @@
+<!-- 
+forEach Loop in arrays
+
+arr.forEach( callBackFunction )
+
+CallbackFunction:- here it is a function to execute for each element in the array
+
+** Callback is a function passed  as an argument to another function. 
+-->
+<script>
+
+    function saybye() {
+        console.log("good bye");
+    }
+
+    function greet(name, callback) {
+        console.log("hello " + name);
+        callback();
+    }
+
+    // greet("ravi", saybye)
+
+    function add(a, b) {
+        console.log("addition : ", (a + b));
+    }
+
+    function sub(a, b) {
+        console.log("subtraction : ", (a - b));
+    }
+
+    function operation(a, b, hello) {
+        hello(a, b);
+    }
+
+    // operation(12, 6, sub)
+
+    // operation(12, 6, function divi(a, b) {
+    //     console.log("division : ", (a / b));
+    // })
+
+    operation(5, 7, (a, b) => {
+        console.log("multiplication : ", (a * b));
+    })
+
+</script>

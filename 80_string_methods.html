@@ -1,0 +1,170 @@
+<!-- 
+ let str="hi";
+ str.length;
+ str.toLowerCase()
+ str.toUpperCase();
+ str.includes("ram") // if ram in str so true or false.
+ str.startsWith("ram");
+ str.endsWith("ram");
+ str.search("ram");// return ram position index or if not found return -1 
+ str.match("ram"); // if find so return ram or not so return null
+ str.matchAll("ram"); // print ram multiple times or not return null
+ str.indexOf("ram") // find index or not substr print -1
+ n.lastIndexOf("ram");// find last reapet element index
+ n.replace("ram","chetan");
+ n.replaceAll("ram","chetan");//all ram replace with chetan
+ n.trim(); //  for unwanted space
+ n.charAt(4); //find pass position char
+ n[2]; // also use index
+ n.charCodeAt(0);// dispaly ascii code for pass position char
+ String.fromCharCode(n);// display char for pass ascii code
+ n.concat(" ").concat("patel"); // combine two string
+ n.split(" "); // spilt string to pass element and return array type object
+ n.repeat(5)// repeat string pass number times
+ n.slice(2,6);//return 2 to 5 index element string
+ n.substr(4,2); // extract sub string start 4 and 2 elemt extract
+ n.substring(4,8); //extract sub string start 4 and end 7 index
+  -->
+<!-- <script>
+    let str = "indore city";
+    // console.log(str.length);
+    let newstr = str.toUpperCase();
+    console.log(str)
+    console.log(newstr)
+</script> -->
+
+
+<!-- <script>
+    let str = "indore city is a clean city";
+    let sub = "clean";
+    // let res = str.includes(sub)
+    // console.log(res);
+    if (str.includes(sub)) {
+        console.log("string contain sub string")
+    }
+    else {
+        console.log("string not contain sub string")
+    }
+
+</script> -->
+
+<!-- <script>
+    let gmail = "ram123@gmail.co";
+    if (gmail.endsWith("gmail.com")) {
+        console.log("valid gmail id")
+    }
+    else {
+        console.log("not valid gmail id")
+    }
+</script> -->
+
+<!-- <script>
+    let name = "mr. raj patel";
+    if (name.startsWith("mr.")) {
+        console.log("valid name")
+    }
+    else {
+        console.log("invalid name please use mr.")
+    }
+</script> -->
+<!-- 
+<script>
+    let str = "mr. raj patel";
+    let index = str.search("ram");
+    console.log(index)
+    if (index == -1) {
+        console.log("sub string is not found")
+    }
+    else {
+        console.log(`sub string is found index number ${index}`);
+    }
+</script> -->
+
+
+<!-- <script>
+    let str = "mr. raj patel raj";
+    let data = str.match("raj");
+    if (data == null) {
+        console.log("not found")
+    }
+    else {
+        console.log(data[0])
+    }
+</script> -->
+
+<!-- <script>
+    let str = "mr. raj patel raj";
+    let data = str.matchAll("raj");
+    if (data == null) {
+        console.log("not found")
+    }
+    else {
+        for (d of data) {
+            console.log(d[0])
+        }
+    }
+</script> -->
+
+<!-- <script>
+    let str = "indore city is clean city";
+    console.log(str.indexOf("city"))
+    console.log(str.lastIndexOf("city"))
+
+</script> -->
+
+<!-- <script>
+    let str = "indore city is clean city";
+    // str = str.replace("city", "village");
+    str = str.replaceAll("city", "village");
+    console.log(str)
+</script> -->
+
+<!-- <script>
+    let str = "            ram shrama           ";
+    console.log(str, "hi")
+    str = str.trim();
+    console.log(str, "hi")
+</script> -->
+
+<!-- <script>
+    let str = "indore";
+    // console.log(str.charAt(3))
+
+    for (let i = 0; i < str.length; i++) {
+        console.log(str.charAt(i))
+    }
+</script> -->
+<!-- <script>
+    let str = "indore";
+    str = str.concat(" city").toUpperCase().length;
+    console.log(str);
+</script> -->
+<!-- <script>
+    let str = "indore is a clean city";
+    let arr = str.split(" ");
+    console.log(arr)
+    for (let word of arr) {
+        console.log(word);
+    }
+
+    for (let word of arr) {
+        console.log(word.length);
+    }
+
+    str = "indore,ujjain,bhopal,rau"
+    let city = str.split(",");
+    console.log(city);
+</script> -->
+
+<!-- <script>
+    let str = "ram";
+    str = str.concat(" ").repeat(500);
+    console.log(str)
+</script> -->
+
+<script>
+    let str = "ram is good boy";
+    // str = str.slice(4, 11);  //slice(startindex,endindex)
+    str = str.substr(4, 7);   //sustr(start_index , totalchar)
+    console.log(str)
+</script>

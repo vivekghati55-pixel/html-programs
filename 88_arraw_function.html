@@ -1,0 +1,46 @@
+<!-- arrow function is sortest syntex to write a function -->
+<!-- arrow functon is compact way to write a function -->
+<!-- 
+ arrow syntex  :-
+  
+ const functionName = (paramter)=> {
+                        //code
+                    }
+-->
+
+<script>
+    const square = (num) => num * num;
+
+    const cube = x => x * x * x
+
+    const add = (a, b) => a + b
+
+    const sub = (a, b) => {
+        return a - b;
+    }
+
+
+    const greeting = () => console.log("good morning");
+
+    const printMsg = () => {
+        console.log("hello ravi")
+        console.log("hello prohit")
+        console.log("hello rupesh")
+    }
+
+    const factorial = (num) => {
+        let fact = 1;
+        for (let i = 1; i <= num; i++) //5
+        {
+            fact = fact * i //24
+        }
+        return fact;
+    }
+
+    const circleArea = radius => 3.141 * radius * radius;
+
+
+    let ans = factorial(4)
+    console.log(ans)
+
+</script>

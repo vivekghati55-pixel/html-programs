@@ -1,0 +1,51 @@
+<!-- 
+   arr.forEach( callbackFunction ) :-   forEach method run callbackfunction for each element of arr.
+-->
+<script>
+    let arr = [12, 34, 56, 78, 90];
+
+    // arr.forEach((num) => {
+    //     console.log(num);
+    // });
+
+    // arr.forEach(num => console.log(num))
+
+    // arr.forEach(num => console.log(num * num))
+
+    // const display = (num) => {
+    //     console.log(num);
+    // }
+
+
+    // function display(num) {
+    //     console.log(num);
+    // }
+
+    // arr.forEach(display);
+
+
+    //wap to print cube of array elements.
+
+    // arr = [4, 6, 8, 2, 9]
+    // console.log(arr);
+    // arr.forEach((num) => console.log(num * num * num));
+
+
+    // we callback function have 3 parameter (value, index , self array)
+    arr = [3, 6, 5, 7, 8, 9]
+    arr.forEach((num, index, selfarr) => {
+        console.log(num, index, selfarr);
+    })
+
+
+    console.log("even numbers  : ");
+    arr.forEach((num) => {
+        if (num % 2 == 0) {
+            console.log(num);
+        }
+    })
+
+
+
+
+</script>

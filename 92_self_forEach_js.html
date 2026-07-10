@@ -1,0 +1,22 @@
+<script>
+    let arr = [3, 5, 6, 7, 8, 9];
+
+    function myForEach(callback) {
+        for (let i = 0; i < arr.length; i++)//0 
+        {
+            callback(arr[i], i, arr);
+        }
+    }
+
+    // arr.forEach((num, i, a) => console.log(num, i, a))
+
+    myForEach((num, index, a) => console.log(num, index, a))
+
+
+    myForEach((num) => {
+        console.log(num * num * num)
+    })
+
+    
+
+</script>

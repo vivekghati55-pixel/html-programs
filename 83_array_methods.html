@@ -1,0 +1,138 @@
+<!-- 
+arr.length 
+arr.pop() //last element remove and return
+arr.push() // single and multiple element at last
+arr.reverse()// reverse array and also return reverse array
+Array.isArray(arr)// check arr is array or not and return true and false
+arr.join('+') // join all array element with + sign and return string
+arr.slice(2,4) // return only 2 to 3 index value like python slicing
+arr.splice(1,2,"hy","by","mai") // arr.splice(start,delete(count),newvalues) // to change some value in array
+arr.toString(); // convert array into string
+arr.at(0)  // fetch element by at method passing index
+delete arr[0] // delete frist element and leave undifined holes
+arr.shift()  // this method delete frist elemnet and also return  and shift all element at lower index
+arr.unshif(666) // this method add element at the bignning and also return size of new array
+
+arr1.concat(arr2) // combine two array and return new array 
+arr1+arr2 // combine two array and return string
+-->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr.length)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    arr.push(500);
+    console.log(arr)
+    arr.push(300, 400)
+    console.log(arr)
+</script> -->
+
+<!-- <script>
+    let arr = [2, 4, 6, 7, 8, 9];
+    let newarr = []
+    for (let num of arr) {
+        newarr.push(num + 5)
+    }
+    console.log(arr)
+    console.log(newarr)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    let res = arr.pop();
+    console.log(`${res}  element is deleted`)
+    console.log(arr)
+</script> -->
+
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    console.log(arr)
+    arr.reverse()
+    console.log(arr)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    console.log(Array.isArray(arr))
+</script> -->
+
+<!-- <script>
+    let str = "indore,ujjain,bhopal,sajapur";
+    let arr = str.split(",")
+    console.log(arr);
+    let data = arr.join(",")
+    console.log(data)
+</script> -->
+
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    let subarr = arr.slice(1, 4)
+    console.log(arr)
+    console.log(subarr)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90];
+    console.log(arr)
+    arr.splice(2, 2, 100, 200, "hello")
+    console.log(arr)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    let data = arr.toString();
+    console.log(arr)
+    console.log(typeof data ,data)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 67, 8, 67]
+    for (i = 0; i < arr.length; i++) {
+        console.log(arr.at(i))
+    }
+
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 67, 8, 67]
+    delete arr[2]
+    console.log(arr)
+
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 67, 8, 67]
+    arr.shift()
+    console.log(arr)
+</script> -->
+
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    arr.unshift(500);
+    console.log(arr)
+</script> -->
+
+<!-- <script>
+    let arr1 = [12, 34, 45, 67, 89, 66]
+    let arr2 = [1, 3, 4, 6, 8, 6]
+    let arr3 = arr1.concat(arr2);
+    console.log(arr1)
+    console.log(arr2)
+    console.log(arr3)
+
+</script> -->
+
+<script>
+    let arr1 = [12, 34, 45, 67, 89, 66]
+    let arr2 = [1, 3, 4, 6, 8, 6]
+    let arr3 = arr1 + arr2;
+    console.log(arr1)
+    console.log(arr2)
+    console.log(typeof arr3, arr3)
+</script>

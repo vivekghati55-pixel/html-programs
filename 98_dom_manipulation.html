@@ -1,0 +1,94 @@
+<!-- 
+DOM Manipulation
+ Attributes
+ getAttribute( attr ) //to get the attribute value
+ setAttribute( attr, value ) //to set the attribute value
+
+ Style :- to change style of any html element using javascript
+
+ node.style
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .pic {
+            width: 200px;
+        }
+
+        button {
+            display: block;
+        }
+
+        .head {
+            background-color: blue;
+            color: white;
+            font-family: cursive;
+        }
+
+        .hero {
+            background-color: red;
+            color: burlywood;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="my-id" class="head" title="this is heading">Code with Vivek</h1>
+    <h3 title="hello courses">course details : </h3>
+    <ol>
+        <li>HTML</li>
+        <li id="lst2">CSS</li>
+        <li>javaScript</li>
+    </ol>
+    <p>for more details contact :- 9763393805</p>
+    <button onclick="changeImage()">click me!</button>
+    <img class="pic" src="images/cat.jpg" />
+    <script>
+
+        //  getAttribute( attr ) //to get the attribute value
+
+        let h1 = document.querySelector("h1");
+
+        let title = h1.getAttribute("title");
+        console.log(title)
+
+        let image = document.querySelector(".pic");
+
+        let src = image.getAttribute("src");
+        console.log(src)
+
+
+        // setAttribute( attr, value ) //to set the attribute value
+
+        h1.setAttribute("title", "ram ram ji");
+        h1.setAttribute("class", "hero")
+
+        function changeImage() {
+            image.setAttribute("src", "images/deer.jpg");
+        }
+
+
+        // Style :- to change style of any html element using javascript
+
+        let list2 = document.querySelector("#lst2");
+        list2.style.color = "red";
+        list2.style.fontSize = "40px";
+        // list2.style.visibility="hidden";
+        list2.style.display = "none";
+
+        image.style.width = "100px";
+    </script>
+</body>
+
+</html>

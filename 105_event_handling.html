@@ -1,0 +1,122 @@
+<!-- 
+What is an Event in JavaScript?
+An event is an action or occurrence that happens in the browser, which JavaScript can respond to.
+👉 Events are things like:
+A user clicking a button
+A webpage loading
+A key being pressed on the keyboard
+A mouse hovering over an element
+A form being submitted
+In short:
+An event is something that happens, and event handling is how your code reacts to it.   
+
+What is Event Handling?
+Event Handling means writing JavaScript code that runs when a specific event occurs.
+You can think of it like this:
+“When this happens → do that.”
+For example:
+When the user clicks a button → show a message.
+
+Real-Life Example
+Imagine a doorbell:
+Event → Someone presses the bell.
+Event Handler → The bell rings.
+Similarly, in a web page:
+Event → A user clicks a button.
+Event Handler → A JavaScript function runs and displays a message.
+
+📋 Commonly Used JavaScript Events
+
+Event Name	         Description	                      Example Use
+
+onclick	             when element is clicked	          Button click
+ondblclick	         Double-click on element	          Zoom or open action
+onmouseover	         Mouse moves over element	          Highlight or tooltip
+onmouseout	         Mouse leaves element	              Remove highlight
+onfocus	             Element gets focus	                  Highlight input
+onblur	             Element loses focus	              Remove highlight
+onkeydown	         Key is pressed down	              Detect key press
+onkeyup	             Key is released	                  Input validation
+onchange	         Value of input                       changes	Dropdown or form
+onload	             Page finishes loading	              Initialize app
+onsubmit	         Form is submitted	                  Validate form
+oninput	             While typing in input	              Live search or feedback
+onmouseup            mouse left/right btn realeased
+onmousedown          mouse left,right btn presed
+
+Event Handling in JS
+ node.event = ( ) => {
+ //handle here
+ }
+ example
+ btn.onclick = ( ) => {
+ console.log(“btn was clicked”);
+ }
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #h1-id {
+            background-color: gray;
+        }
+
+        .focus {
+            outline: none;
+            border: 1px solid skyblue;
+            box-shadow: 1px 1px 10px rgb(135, 206, 235, 0.8);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1-id">Code with Vivek</h1>
+    <input id="int" type="text" />
+    <input type="text" />
+    <select>
+        <option>MH</option>
+        <option>up</option>
+        <option>rj</option>
+        <option>gt</option>
+    </select>
+    <script>
+        // let h1 = document.querySelector("#h1-id");
+        let input = document.querySelector("#int");
+
+        // input.onfocus = () => {
+        //     console.log("focus on input");
+        //     input.classList.add("focus");
+        // }
+
+        // input.onblur = () => {
+        //     console.log("blur event is occure");
+        //     input.classList.remove("focus")
+        // }
+
+        // input.oninput = () => {
+        //     console.log("typing in input")
+        // }
+
+        // let select = document.querySelector("select");
+        // select.onchange = () => {
+        //     console.log("change item in drop down")
+        // }
+
+        input.onkeydown = () => {
+            input.style.backgroundColor = "red";
+            console.log("keydown in keybord");
+        }
+        input.onkeyup = () => {
+            input.style.backgroundColor = "white    ";
+            console.log("keyup in keybord");
+        }
+
+    </script>
+</body>
+
+</html>

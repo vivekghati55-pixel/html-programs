@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head">hello world institute</h1>
+    <button onclick="changeHeading1()">change content1</button>
+    <button onclick="changeHeading2()">change content2</button>
+    <script>
+        function changeHeading1() {
+            let h1 = document.querySelector("#head");
+            h1.innerText = "HW choching center";
+        }
+        function changeHeading2() {
+            let h1 = document.querySelector("#head");
+            h1.innerHTML = "<b style='color:red'>ravi choching center<b>";
+        }
+    </script>
+</body>
+
+</html>

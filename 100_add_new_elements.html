@@ -1,0 +1,87 @@
+<!-- 
+DOM Manipulation
+ Insert Elements
+ let el = document.createElement(“div“)
+ node.append( el ) //adds at the end of node (inside)
+ node.prepend( el ) //adds at the start of node (inside)
+ node.before( el ) //adds before the node (outside)
+ node.after( el ) //adds after the node (outside) 
+
+  Delete Element
+ node.remove( ) //removes the node
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: rgb(194, 182, 182);
+        }
+
+        .my {
+            background-color: blue;
+            color: white;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Code with Vivek</h1>
+    <h3>course detials : </h3>
+    <ol>
+        <li>html</li>
+        <li id="l2">css</li>
+        <li>JS</li>
+    </ol>
+
+    <div class="box">
+
+        <p>this is para1</p>
+        <p>this is para2</p>
+        <p>this is para3</p>
+
+    </div>
+
+    <script>
+        let btn = document.createElement("button");
+        btn.innerText = "click me!"
+        btn.setAttribute("title", "this is button");
+        btn.setAttribute("onClick", "fun()")
+        console.log(btn)
+
+
+        let div = document.querySelector(".box");
+        // div.append(btn);
+        // div.prepend(btn);
+        // div.after(btn);
+        div.before(btn);
+
+
+        let lst = document.createElement("li");
+        lst.innerText = "python";
+
+        let ol = document.querySelector("ol");
+        ol.append(lst);
+
+        function fun() {
+            let head = document.createElement("h1");
+            head.innerText = "ram ram ji"
+            // head.style.backgroundColor = "red";
+            // head.style.color = "white";
+            head.setAttribute("class", "my");
+            div.append(head);
+        }
+
+        let l2 = document.querySelector("#l2");
+        l2.remove();
+        btn.remove();
+    </script>
+</body>
+
+</html>

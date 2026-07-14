@@ -1,0 +1,82 @@
+<!-- 
+element.classList :- provide class list for a element 
+1. add():-Adds one or more classes to an element.
+element.classList.add("classname1", "classname2", ...);
+2.remove():-Removes one or more classes from the element.
+element.classList.remove("classname1", "classname2", ...);
+3.toggle():-Adds a class if it’s not present, otherwise removes it.
+element.classList.toggle("classname");
+You can also pass a second boolean argument:
+div.classList.toggle("dark-mode", true);  // Forces add
+div.classList.toggle("dark-mode", false); // Forces removez
+4.contains():-Checks if a class is present on the element return boolean value true , false.
+element.classList.contains("classname");
+5. replace():-Replaces one class with another.
+ element.classList.replace("oldClass", "newClass");
+6.Access by Index:-You can access individual classes by their index (like an array).
+let firstClass = div.classList[0];   
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-red {
+            background-color: red;
+        }
+
+        .text-color {
+            color: white;
+        }
+
+        .text-style {
+            font-family: cursive;
+        }
+
+        .border-red {
+            outline: none;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="bg-red">hello world institute</h1>
+    <button onclick="toggleClass()">change</button>
+    <input onclick="changeBorder()" type="text">
+    <script>
+        let h1 = document.querySelector("h1");
+        console.log(h1.classList)
+        // h1.classList.add("text-color")   // add single class
+        // h1.classList.add("text-color", "text-style")  // add multiple classes
+
+        // h1.classList.remove("text-color")  // remove single class 
+        // h1.classList.remove("text-color", "bg-red")  // remove single class 
+
+        // function toggleClass() {
+        //     h1.classList.toggle("bg-red");  // if class exist its remove or not exist its add
+        // }
+
+        function toggleClass() {
+            if (h1.classList.contains("bg-red")) {
+                h1.classList.replace("bg-red", "text-style");
+            }
+            else {
+                h1.classList.replace("text-style", "bg-red");
+            }
+        }
+
+
+        function changeBorder() {
+            let inp = document.querySelector("input");
+            inp.classList.add("border-red");
+        }
+
+    </script>
+</body>
+
+</html>

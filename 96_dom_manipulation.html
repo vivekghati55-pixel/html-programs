@@ -1,0 +1,80 @@
+<!-- 
+ DOM Manipulation :-
+ Properties :-  using this properties we can get / change / update dom element value/data.
+
+ tagName : returns tag for element nodes
+ innerText : returns the text content of the element and all its children
+ explaine children termlogy using perant child concept fristchild / last child / middle child
+ innerHTML : returns the plain text or HTML contents in the element
+ textContent : returns textual content even for hidden elements
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(153, 153, 247);
+        }
+    </style>
+</head>
+
+<body id="my-body">
+    <h1 class="head" style="visibility: hidden;">Hello world Institute</h1>
+    <h3>course details :- </h3>
+    <ol>
+        <li id="listItem1">c/c++</li>
+        <li>java</li>
+        <li>python</li>
+    </ol>
+    <p id="para">for more detail contact 8085896740</p>
+    <button>click me!</button>
+
+    <script>
+
+        // innerText: returns the text content of the element and all its children
+        // let heading = document.querySelector("#para");
+        // console.log(heading.innerText);
+        // heading.innerText = "follow for more detail"
+
+        // let item = document.querySelector("#listItem1");
+        // item.innerText = "HTML";
+
+
+        let btn = document.querySelector("button");
+        btn.innerText = "join class"
+
+        // let h1 = document.querySelector(".head");
+        // h1.innerText = h1.innerText + "  " + "in indore";
+
+
+        // innerHTML: returns the plain text or HTML contents in the element
+
+        let ol = document.querySelector("ol");
+        // console.log(ol.innerText)
+        // console.log(ol.innerHTML)
+
+        let body = document.querySelector("#my-body");
+        // console.log(body.innerText)
+        // console.log(body.innerHTML)
+
+
+        let item = document.querySelector("#listItem1");
+        // item.innerText = "<b>html</b>";
+        item.innerHTML = "<b style='color:red' >html</b>";
+
+
+        //  textContent : returns textual content even for hidden elements
+
+        // let myData = document.querySelector("h1");
+        // console.log(myData.textContent)
+
+
+        //  tagName : returns tag for element nodes
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!-- What is the DOM Tree?
+
+DOM (Document Object Model) represents an HTML page as a tree-like structure — where:
+
+Each HTML tag is a node (element).
+
+Elements inside other elements are child nodes.
+
+Elements that contain other elements are parent nodes.
+
+
+element.parentElement :- return parent element 
+
+element.children:-Returns all child elements
+
+console.log(parent.firstElementChild); // return first child
+
+console.log(parent.lastElementChild);
+
+console.log(child.nextElementSibling);
+
+console.log(child.previousElementSibling);
+
+hasChildNodes():-Checks whether the element has any child nodes.
+
+parent.removeChild(child);
+
+replaceChild():-Replaces one child element with another.
+parent.replaceChild(newPara, child);
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Code with vivek </h1>
+    <h3>coursese details : </h3>
+    <ol>
+        <li id="lst">html</li>
+        <li>css</li>
+        <li>JS</li>
+    </ol>
+    <div>
+        <p id="para">Code with Vivek</p>
+        <a href="">get course details</a>
+    </div>
+    <button>submit</button>
+    <script>
+        let div = document.querySelector("div");
+        let para = document.querySelector("#para");
+        let btn = document.createElement("button");
+        btn.innerText = "click me!";
+
+        // div.replaceChild(btn, para);  //its replace sigle child
+        div.replaceChildren(btn);  //its replace sigle child
+
+        let lst = document.querySelector("#lst");
+        // lst.parentElement.style.backgroundColor = "red"
+
+        let ol = document.querySelector("ol");
+
+        // let data = ol.children;
+
+        // let arr = ["raj", "maduri", "utsav"]
+        // let i = 0;
+
+        // Array.from(data).forEach(element => {
+        //     // console.log(element)
+        //     element.innerText = arr[i];
+        //     i++;
+        // });
+
+        // for (let ele of data) {
+        //    console.log(ele)
+        // }
+
+
+        // ol.firstElementChild
+    </script>
+</body>
+
+</html>

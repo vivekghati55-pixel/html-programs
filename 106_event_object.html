@@ -1,0 +1,69 @@
+<!-- 
+Event Object
+ It is a special object that has details about the event.
+ All event handlers have access to the Event Object's properties and methods.
+ node.event = (e) => {
+ //handle here
+ }
+ e.target, e.type, e.clientX, e.clientY
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">click me!</button>
+
+    <div class="box">
+
+    </div>
+    <h1 id="cordinate"></h1>
+    <input id="input" type="text">
+    <button id="getbtn">get value</button>
+    <script>
+        let btn = document.querySelector(".btn");
+
+        btn.onclick = (evt) => {
+            console.log(evt);
+            // console.log(evt.type);
+            // console.log(evt.target);
+            // evt.target.style.width='120px'
+        }
+
+        let box = document.querySelector(".box");
+        let cordinate = document.querySelector("#cordinate");
+        let input = document.querySelector("#input");
+        let getbtn = document.querySelector("#getbtn");
+
+        box.onmousemove = (evt) => {
+            // console.log(evt.target);
+            // console.log(evt.type);
+            console.log(evt.clientX, evt.clientY);
+            // console.log("mouse is moving")
+            cordinate.innerText = `x = ${evt.clientX} y = ${evt.clientY}`
+        }
+
+        getbtn.onclick = () => {
+            console.log(input.value)
+            cordinate.innerText = input.value;
+        }
+
+        input.oninput = (evt) => {
+            console.log(evt.target.value)
+        }
+    </script>
+</body>
+
+</html>

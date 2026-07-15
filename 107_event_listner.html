@@ -1,0 +1,57 @@
+<!-- 
+Event Listeners:- 
+Event Listener ek function hota hai jo browser me kisi event
+(click, change, keypress, hover, etc.) ko sunता (listen) hai.
+here at a time we can perform more than one funtion for same 
+event occure.
+node.addEventListener( event, callback ) 
+node.removeEventListener( event, callback ) 
+*Note : the callback reference should be same to remove
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">click me!</button>
+    <script>
+        let btn = document.querySelector("#btn");
+        // btn.onclick = () => {
+        //     console.log("hello js1")
+        // }
+
+        // btn.onclick = () => {
+        //     console.log("hello js2")
+        // }
+
+        btn.addEventListener("click", () => {
+            console.log("hello js1")
+        })
+
+
+        btn.addEventListener("click", () => {
+            console.log("hello js2")
+        })
+
+        // function onhover() {
+        //     console.log("on mouse over");
+        // }
+        const onhover = () => {
+            console.log("on mouse over");
+        }
+
+        btn.addEventListener("mouseover", onhover)
+
+        setTimeout(() => {
+            btn.removeEventListener("mouseover", onhover)
+        }, 5000)
+
+    </script>
+</body>
+
+</html>
